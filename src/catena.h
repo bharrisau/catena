@@ -7,7 +7,10 @@
 /* The default unit for all length values are bytes */
 
 /* Recommended default values */
-#define H_LEN      64
+#ifndef H_LEN
+  #define H_LEN      64
+#endif
+
 #define KEY_LEN    16
 #define LAMBDA      3
 #define GARLIC     18
